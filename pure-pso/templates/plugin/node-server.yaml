@@ -43,7 +43,7 @@ spec:
       # https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
       dnsPolicy: ClusterFirstWithHostNet
       hostPID: true
-{{- if eq .Values.app.prereq true}}
+{{- if eq .Values.app.installPrerequisites true}}
       initContainers:
         - name: pso-node-config
           image: "{{ .Values.images.nodeConfig.name }}:{{ .Values.images.nodeConfig.tag }}"

@@ -22,7 +22,7 @@ app:
   debug: false
   # this option defines whether Pure node-specific pre-requisites are installed on all
   # nodes running PSO
-  prereq: true
+  installPrerequisites: true
 
 # this option is to enable/disable the csi topology feature
 # for pso-csi

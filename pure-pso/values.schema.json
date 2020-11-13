@@ -198,7 +198,7 @@
             "examples": [
                 {
                     "debug": true,
-                    "prereq": true
+                    "installPrerequisites": true
                 }
             ],
             "required": [
